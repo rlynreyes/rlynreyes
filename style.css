@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'patrick hand', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'patrick hand', sans-serif;
+    z-index: 999;
+    
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:absolute;
+    left: 45%;
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3 ease;
+}
+.navbar .menu li a:hover{
+    color: #ff00ea;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    background: black;
+    transition: 0.3 ease;
+    border-radius: 10%;
+}
+.navbar.sticky .menu li a{
+    color: rgb(255, 255, 255);
+    transition: color 0.3 ease;
+}
+.navbar.sticky .menu li a:hover{
+    color: #ff00ea;
+}
+.menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+/*Home*/
+.home{
+    display: flex;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("jkh.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.home .max-width{
+    text-align: center;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+ 
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: white;
+    text-shadow: 0px 0px 10px #ff00ea;
+    
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: white;
+    font-weight: 500;
+    text-shadow: 0px 0px 10px #ff00ea;
+    
+}
+.home .home-content a{
+    display: inline-block;
+    background: black;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid white;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    font-family: 'patrick hand', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    color: black; 
+}
+
+
+
+section .titles{
+    position: relative;
+    font-family: 'patrick hand', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    color: white; 
+}
+section .titles::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);  
+    
+}
+section .titles::after{
+    
+    position: absolute;
+    background: white;
+    color: black;
+    font-size: 20px;
+    padding: 7px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    
+}
+
+
+
+section .titless{
+    position: relative;
+    font-family: 'patrick hand', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    color: white; 
+}
+section .titless::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);  
+    
+}
+section .titless::after{
+    
+    position: absolute;
+    background: white;
+    color: black;
+    font-size: 20px;
+    padding: 7px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    
+}
+
+
+
+section .title::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background: white;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);  
+    
+}
+
+
+
+
+
+section .title::after{
+    
+    position: absolute;
+    background: white;
+    color: black;
+    font-size: 20px;
+    padding: 7px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    
+}
+
+/* About Design */
+.about{
+    font-family: 'patrick hand', sans-serif;
+    background:pink;
+    background-size: cover;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    
+}
+.about .title::after{
+    content: "Who i am";
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 20px;
+    
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid  #ff00ea;
+    box-shadow: 5px 1px 11px #ff00ea;
+
+    
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.about .about-content .right .text span{
+    color: #ff00ea;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #ff00ea;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+.about .about-content .right a:hover{
+    color: black;
+    background: #ff00ea;
+    font-weight: 600;
+    border: 2px solid #111;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.certs{
+    font-family: 'patrick hand', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("banner3.jpg");
+    background-size: cover;
+    height: 100vh;
+    min-height: 1000px;
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titles::after{
+    content: "What I've Done";
+    
+}
+.card{
+    position: absolute ;
+    left: 20%;
+    top: 210%;
+    background: #f5a8e8;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    
+}
+ .card:hover{
+    color: black;
+
+}
+ .card .box{
+    transition: all 0.2s ease;
+}
+ .card:hover .box{
+    transform: scale(1.05);  
+}
+.card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.card2{
+    position: absolute;
+    left: 38%;
+    top: 300%;
+    background: #f5a8e8;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    
+}
+.card2:hover{
+    color: black;
+
+}
+ .card2 .box{
+    transition: all 0.2s ease;
+}
+ .card2:hover .box{
+    transform: scale(1.05);  
+}
+.card2 .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.card3{
+    position: absolute;
+    left: 55%;
+    top: 210%;
+    background: #f5a8e8;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    
+}
+.card3:hover{
+    color: black;
+
+}
+ .card3 .box{
+    transition: all 0.2s ease;
+}
+ .card3:hover .box{
+    transform: scale(1.05);  
+}
+.card3 .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.card4{
+    position: absolute;
+    left: 10%;
+    top: 265%;
+    background: #f5a8e8;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid white;    
+    
+}
+.card4:hover{
+    color: black;
+
+}
+ .card4 .box{
+    transition: all 0.2s ease;
+}
+ .card4:hover .box{
+    transform: scale(1.05);  
+}
+.card4 .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.card5{
+    position: absolute;
+    left: 65%;
+    top: 265%;
+    background: #f5a8e8;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    
+}
+.card5:hover{
+    color: black;
+
+}
+ .card5 .box{
+    transition: all 0.2s ease;
+}
+ .card5:hover .box{
+    transform: scale(1.05);  
+}
+.card5 .text{
+    font-size: 25px;
+    font-weight: 500;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Skils Design */
+.skills{
+    font-family: 'patrick hand', sans-serif;
+    background: pink;
+    background-size: cover;
+    height: 100vh;
+    min-height: 1000px;
+    display: flex;
+}
+
+.skills .title::after{
+    content: "what i know";
+
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: black;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+    color: black;
+    font-size: 25px;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: black;
+    color: #ff00ea;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #ff00ea;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: black;
+    background:#ff00ea;
+    border: 2px solid #111;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 20px;
+    position: relative; 
+    left: 110%; 
+    
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: rgb(85, 83, 83);
+    position: relative;
+    margin-top: 20px;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #048ef7;
+    
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+
+/*Contact Design*/
+.contact{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("bg2.jpg");
+    text-align: center;
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    min-height: 1000px;
+    display: flex;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact .titless::after{
+    content: "Get in Touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #ff00ea;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: white;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button{
+  color: #ff00ea;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: black;
+  border: 2px solid #ff00ea;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+  color: black;
+  background: #ff00ea;
+  font-weight: 500;
+  border: 2px solid black;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:#ff00ea;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
